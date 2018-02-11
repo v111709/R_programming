@@ -5,6 +5,12 @@ B=matrix(1:100,nrow=6)
 ###------ nor is it a square matrix, so I changed to a multiplier of 100 and 900
 A=matrix(1:100,nrow=10)
 B=matrix(1:900,nrow=30)
+A
+B
+
+solve(A)
+solve(B)
+
 det(A)
 det(B)
 ###-----------unable to do the inverse matrix for either since determinant is 0
