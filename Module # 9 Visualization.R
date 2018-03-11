@@ -3,11 +3,6 @@ library(ggplot2)
 library(lattice)
 library(data.table)
  
-#--Nile
-#--structure(Nile)
-
-#--NileTimeseries < - Nile
-#--plot.ts(Nile)
 
 
 #----Read file from internet location using the data.table package
