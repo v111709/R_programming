@@ -1,0 +1,32 @@
+---
+title: "Final Project: create your own R package"
+author: "Linda Doobay"
+date: "April 18, 2018"
+output: word_document
+project: 'Final Project 3: Preliminary Results'
+instructor: 'Dr. Alon Friedman'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## LIS4930.724S18 - R Programming - lexp package
+
+The lexp package takes input x (country), reads the world bank repository data for life expectancy at birth, unzips, format and filters the data and returns a timeseries chart for the inputed country for the period of 1960 to 2015.
+
+Below is the code that can be used to test the package: 
+
+```{r message=FALSE}
+library(lexp)
+#---- call lexp function for a particular country to obtain a timeseries chart of Life Expectancy from 1960 to 2015  ---------#
+lexpCountry <- "Brazil"
+plotCountry <- getCDCData(lexpCountry)
+plotCountry
+
+#---- call lexp function using an invalid Country Name ---------#
+lexpCountry <- "Michigan"
+plotCountry <- getCDCData(lexpCountry)
+plotCountry
+```
+

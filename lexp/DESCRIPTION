@@ -1,0 +1,12 @@
+Package: lexp
+Type: Package
+Title: Country Life Expectancy at birth
+Version: 0.1.0
+Author: Linda Doobay <ldoobay@mail.usf.edu>
+Maintainer: Linda Doobay <ldoobay@mail.usf.edu>
+Description: The lexp package takes the input country, reads CDC Life Exp data and returns timeseries chart
+License: CCO
+Depends: R (>= 3.0.1), ggplot2, zip, data.table, ggthemes
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1
